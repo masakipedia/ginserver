@@ -10,7 +10,7 @@ import (
 
 var router *gin.Engine
 
-func GinServer() {
+func init() {
 	// Set Gin to production mode
 	gin.SetMode(gin.ReleaseMode)
 
@@ -19,7 +19,7 @@ func GinServer() {
 
 	// Process the templates at the start so that they don't have to be loaded
 	// from the disk again. This makes serving HTML pages very fast.
-	router.LoadHTMLGlob("../templates/*")
+	router.LoadHTMLGlob("templates/*")
 
 	// Initialize the routes
 	initializeRoutes()
