@@ -25,7 +25,7 @@ func init() {
 	initializeRoutes()
 
 	// Start serving the application
-	router.Run(":3000")
+	http.Handle("/", router)
 }
 
 // Render one of HTML, JSON or CSV based on the 'Accept' header of the request
