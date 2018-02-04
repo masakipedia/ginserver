@@ -20,7 +20,7 @@ func GinServer() {
 
 	// Process the templates at the start so that they don't have to be loaded
 	// from the disk again. This makes serving HTML pages very fast.
-	router.LoadHTMLGlob("../static/templates/*")
+	router.LoadHTMLGlob("static/templates/*")
 
 	// Initialize the routes
 	initializeRoutes()
