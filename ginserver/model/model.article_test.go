@@ -1,6 +1,6 @@
 // models.article_test.go
 
-package ginserver
+package model
 
 import "testing"
 

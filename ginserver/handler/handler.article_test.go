@@ -1,6 +1,6 @@
 // handlers.article_test.go
 
-package ginserver
+package handler
 
 import (
 	"encoding/json"

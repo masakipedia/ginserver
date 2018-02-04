@@ -1,6 +1,6 @@
 // handlers.user_test.go
 
-package ginserver
+package handler
 
 import (
 	"io/ioutil"
